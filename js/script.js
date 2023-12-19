@@ -44,7 +44,6 @@
       return matches ? decodeURIComponent(matches[1]) : undefined;
     }
 
-    console.log(getCookie('steep'));
 
 
     setTimeout(() => {
