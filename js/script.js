@@ -1,13 +1,14 @@
 (() => {
   window.addEventListener('load', () => {
 
+
+
     let randomInteger = (min, max) => {
       let rand = min + Math.random() * (max + 1 - min);
       return Math.floor(rand);
     }
 
     function setCookie(name, value, options = {}) {
-
       options = {
         path: '/'
       };
@@ -29,9 +30,12 @@
       document.cookie = updatedCookie;
     }
 
-    setCookie('steep', '1', {secure: true, 'max-age': 3600});
-    setCookie('round', `${randomInteger(1, 3)}`, {secure: true, 'max-age': 3600});
-    setCookie('current', '0', {secure: true, 'max-age': 3600});
+
+    if (!getCookie('user')) {
+      setCookie('steep', '1', {secure: true, 'max-age': 3600});
+      setCookie('round', `${randomInteger(1, 3)}`, {secure: true, 'max-age': 3600});
+      setCookie('current', '1', {secure: true, 'max-age': 3600});
+    }
 
     function getCookie(name) {
       let matches = document.cookie.match(new RegExp(
@@ -40,7 +44,7 @@
       return matches ? decodeURIComponent(matches[1]) : undefined;
     }
 
-    getCookie('steep');
+    console.log(getCookie('steep'));
 
 
     setTimeout(() => {
@@ -126,7 +130,7 @@
 
     document.querySelector('.list-box').addEventListener('click', (event) => {
       if (event.target.classList.contains('list-box__item') || event.target.closest('.list-box__item')) {
-        
+        if (getCookie(''))
       }
     })
 
