@@ -29,11 +29,7 @@
     }
 
 
-    if (!getCookie('user')) {
-      setCookie('steep', '1', {secure: true, 'max-age': 3600});
-      setCookie('round', `${randomInteger(1, 3)}`, {secure: true, 'max-age': 3600});
-      setCookie('current', '1', {secure: true, 'max-age': 3600});
-    }
+
 
     function getCookie(name) {
       let matches = document.cookie.match(new RegExp(
@@ -58,7 +54,12 @@
       popupPreview.classList.remove('hide');
     }
 
-    viewPreviewPopup();
+    if (!getCookie('user')) {
+      setCookie('steep', '1', {secure: true, 'max-age': 3600});
+      setCookie('round', `${randomInteger(1, 3)}`, {secure: true, 'max-age': 3600});
+      setCookie('current', '1', {secure: true, 'max-age': 3600});
+      viewPreviewPopup();
+    }
 
     document.querySelector('.popup-preview__submit').addEventListener('click', () => {
       let userName = document.querySelector('#name').value;
