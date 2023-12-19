@@ -271,6 +271,14 @@ mark, button {
   transform: translate(-50%, -50px);
 }
 
+.list-box__item.open.win .list-box__gift {
+  z-index: 9;
+}
+
+.list-box__item.open.win .list-box__bottom {
+  z-index: 8;
+}
+
 .app-content__info {
   font: 400 16px/19px/ var(--font);
   color: #000;
