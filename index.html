@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Страница проведения розыгрыша призов</title>
+  <!-- for mobile devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- use last version of IE -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- additional styles -->
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<main class="content loading">
+  <div class="preload">
+    <img src="img/loading.gif">
+  </div>
+
+  <div class="app">
+    <div class="app-content-wrap">
+      <h2 class="app-content-wrap__title">Розыгрыш призов</h2>
+
+      <div class="app-content">
+        <div class="app-content-title">
+          <span class="app-content-title__text">Желаем Вам удачи!</span>
+          <time class="app-content-title__date">17 декабря 2023</time>
+        </div>
+
+        <ul class="list-box">
+          <li class="list-box__item open">
+            <div class="list-box__head"></div>
+            <div class="list-box__gift"></div>
+            <div class="list-box__bottom"></div>
+            <div class="list-box__wall"></div>
+          </li>
+          <li class="list-box__item">
+            <div class="list-box__head"></div>
+            <div class="list-box__gift"></div>
+            <div class="list-box__bottom"></div>
+            <div class="list-box__wall"></div>
+          </li>
+          <li class="list-box__item">
+            <div class="list-box__head"></div>
+            <div class="list-box__gift"></div>
+            <div class="list-box__bottom"></div>
+            <div class="list-box__wall"></div>
+          </li>
+          <li class="list-box__item">
+            <div class="list-box__head"></div>
+            <div class="list-box__gift"></div>
+            <div class="list-box__bottom"></div>
+            <div class="list-box__wall"></div>
+          </li>
+          <li class="list-box__item">
+            <div class="list-box__head"></div>
+            <div class="list-box__gift"></div>
+            <div class="list-box__bottom"></div>
+            <div class="list-box__wall"></div>
+          </li>
+          <li class="list-box__item">
+            <div class="list-box__head"></div>
+            <div class="list-box__gift"></div>
+            <div class="list-box__bottom"></div>
+            <div class="list-box__wall"></div>
+          </li>
+          <li class="list-box__item">
+            <div class="list-box__head"></div>
+            <div class="list-box__gift"></div>
+            <div class="list-box__bottom"></div>
+            <div class="list-box__wall"></div>
+          </li>
+          <li class="list-box__item">
+            <div class="list-box__head"></div>
+            <div class="list-box__gift"></div>
+            <div class="list-box__bottom"></div>
+            <div class="list-box__wall"></div>
+          </li>
+          <li class="list-box__item">
+            <div class="list-box__head"></div>
+            <div class="list-box__gift"></div>
+            <div class="list-box__bottom"></div>
+            <div class="list-box__wall"></div>
+          </li>
+          <li class="list-box__item">
+            <div class="list-box__head"></div>
+            <div class="list-box__gift"></div>
+            <div class="list-box__bottom"></div>
+            <div class="list-box__wall"></div>
+          </li>
+          <li class="list-box__item">
+            <div class="list-box__head"></div>
+            <div class="list-box__gift"></div>
+            <div class="list-box__bottom"></div>
+            <div class="list-box__wall"></div>
+          </li>
+          <li class="list-box__item">
+            <div class="list-box__head"></div>
+            <div class="list-box__gift"></div>
+            <div class="list-box__bottom"></div>
+            <div class="list-box__wall"></div>
+          </li>
+        </ul>
+
+        <p class="app-content__info">*Принять участие в акции можно только 1 раз</p>
+      </div>
+    </div>
+
+
+    <div class="app-chat">
+      <div class="chat-top">
+        <span class="chat-top__title">Онлайн чат</span>
+        <p class="chat-top__text">Сейчас онлайн: <span id="online">62 человека</span></p>
+      </div>
+
+      <div class="chat">
+        <ul class="chat-list">
+          <li class="chat-list__item">
+            <div class="chat-list__avatar">
+              <img src="img/def-avatar.jpg">
+            </div>
+            <div class="chat-list__messages">
+              <strong>Марина</strong>
+              <p>Олег, молодец)</p>
+              <time>20:21</time>
+            </div>
+          </li>
+          <li class="chat-list__item">
+            <div class="chat-list__avatar">
+              <img src="img/def-avatar.jpg">
+            </div>
+            <div class="chat-list__messages">
+              <strong>Марина</strong>
+              <p>Олег, молодец)</p>
+              <time>20:21</time>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="chat-form">
+        <div class="chat-form__input">
+          <input type="text" placeholder="Напишите сообщение" id="user-message">
+          <button type="button" class="chat-form__btn-message"></button>
+        </div>
+        <div class="chat-form__settings">
+          <button type="button" class="chat-form__input-img"></button>
+          <button type="button" class="chat-form__input-file"></button>
+          <button type="button" class="chat-form__btn-settings"></button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="popup hide">
+    <div class="popup-preview hide">
+      <img src="img/smile.gif" class="popup-preview__img">
+      <h3 class="popup-preview__title">Участие в розыгрыше</h3>
+      <p class="popup-preview__text">Более 500 единиц компьютерной и мобильной техники, а так же множество денежных
+        призов в размере: от <mark>10$</mark> до <mark>10000$</mark> США</p>
+      <p class="popup-preview__text">Все, что Вам нужно сделать - это открыть правильную подарочную коробку.</p>
+      <p class="popup-preview__text">У вас есть 3 попытки, удачи! <br><strong>Для продолжения введите своё имя</strong></p>
+
+      <input type="text" class="popup-preview__input" id="name" placeholder="Ваше имя">
+      <button type="button" class="popup-preview__submit">Принять участие</button>
+    </div>
+
+  </div>
+
+  <audio src="media/win.mp3" id="audio-win"></audio>
+  <audio src="media/fail.mp3" id="audio-fail"></audio>
+  <audio src="media/chat.mp3" id="audio-chat"></audio>
+</main>
+
+<!-- additional scripts -->
+<script src="js/script.js"></script>
+</body>
+</html>
