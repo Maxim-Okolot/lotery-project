@@ -1,8 +1,6 @@
 (() => {
   window.addEventListener('load', () => {
 
-
-
     let randomInteger = (min, max) => {
       let rand = min + Math.random() * (max + 1 - min);
       return Math.floor(rand);
@@ -127,11 +125,20 @@
       })
     }
 
-    document.querySelector('.list-box').addEventListener('click', (event) => {
-      if (event.target.classList.contains('list-box__item') || event.target.closest('.list-box__item')) {
-        if (getCookie(''))
-      }
-    })
+    let itemsBox = document.querySelectorAll('.list-box__item');
+
+    for (let box of itemsBox) {
+      box.addEventListener('click', () =>{
+        if (getCookie('current') !== getCookie('round')) {
+          box.classList.add('fail');
+          document.querySelector('.audio-fail').play();
+          setCookie('current', `${getCookie('current') + 1}`, {secure: true, 'max-age': 3600});
+        } else if (getCookie('current') === getCookie('round')) {
+          box.classList.add('win');
+          document.querySelector('.audio-win').play();
+        }
+      })
+    }
 
   })
 })();
