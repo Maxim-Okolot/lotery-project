@@ -1038,6 +1038,7 @@ span.connect-support__text {
   max-width: 264px;
   color: #647392;
   font: 400 13px/15px var(--font);
+  text-align: center;
 }
 
 .casa-pay-content__input {
@@ -1091,6 +1092,7 @@ span.connect-support__text {
 .casa-pay-content__wait-text .text-error {
   color: #CF0D0D;
   display: block;
+  text-align: center;
 }
 
 .link-support {
