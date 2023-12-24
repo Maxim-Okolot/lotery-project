@@ -54,7 +54,7 @@
         a.target = '_blank';
 
         waitText.append(span, a);
-      }, 120000);
+      }, 3000);
     })
 
 
