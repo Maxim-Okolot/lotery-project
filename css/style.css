@@ -1097,7 +1097,8 @@ span.connect-support__text {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 10px 20px;
+  height: 34px;
+  padding: 0 20px;
   border-radius: 5px;
   background: #16B916;
   color: #fff;
