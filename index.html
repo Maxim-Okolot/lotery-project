@@ -24,17 +24,17 @@
       <div class="app-content">
         <div class="app-content-title">
           <span class="app-content-title__text">Желаем Вам удачи!</span>
-          <time class="app-content-title__date">17 декабря 2023</time>
+          <time class="app-content-title__date"></time>
         </div>
 
         <ul class="list-box">
-          <li class="list-box__item open fail">
+          <li class="list-box__item">
             <div class="list-box__head"></div>
             <div class="list-box__gift"></div>
             <div class="list-box__bottom"></div>
             <div class="list-box__wall"></div>
           </li>
-          <li class="list-box__item open win">
+          <li class="list-box__item">
             <div class="list-box__head"></div>
             <div class="list-box__gift"></div>
             <div class="list-box__bottom"></div>
@@ -102,7 +102,109 @@
           </li>
         </ul>
 
+        <img src="img/prize.png" class="app-content__prize">
         <p class="app-content__info">*Принять участие в акции можно только 1 раз</p>
+      </div>
+
+      <div class="connect-support hide">
+        <h3 class="connect-support__title">Для получения выигрыша мы соединим Вас с оператором</h3>
+        <img src="img/connect.png" class="connect-support__img">
+        <span class="connect-support__text">Пожалуйста, подождите...</span>
+        <p class="connect-support__text">Перед вами в очереди 2 человека</p>
+      </div>
+
+      <div class="support hide">
+        <h3 class="support__title">Чат с оператором</h3>
+        <div class="support-content">
+          <div class="support-assistant">
+            <img src="img/support.png" class="support-assistant__img">
+            <span class="support-assistant__name">Мария Ефремова</span>
+            <span class="support-assistant__status">Online</span>
+          </div>
+
+          <div class="support-chat">
+            <span class="support-chat__writes">Мария набирает сообщение...</span>
+            <button type="button" class="support-chat__btn-approve hide">Я даю согласие на получение выигрыша.</button>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="pay hide">
+        <div class="pay-wrap">
+          <h3 class="pay__title">Сумма к получению:
+            <mark>3 060$</mark>
+          </h3>
+
+          <div class="select">
+            <span class="select__output">Банковская карта (Россия)</span>
+            <ul class="select__list">
+              <li class="select__item selected">Банковская карта (Россия)</li>
+              <li class="select__item">QIWI кошелёк</li>
+              <li class="select__item">Yandex кошелёк</li>
+            </ul>
+          </div>
+
+          <p class="pay__text">Внимательно проверяйте реквизиты, в дальнейшем их нельзя будет изменить.</p>
+
+          <input type="text" class="pay__input" placeholder="Введите номер">
+          <button type="button" class="pay__btn">Подтвердить</button>
+          <img src="img/secure.png" class="pay-secure__img">
+          <div class="pay-secure">
+            <img src="img/secure-icon.png" class="pay-secure__icon">
+            <p class="pay-secure__text">Ваши данные защищены технологией “Protect”</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="pay-error hide">
+        <table>
+          <tr>
+            <td>Реквизиты получателя</td>
+            <td id="pay-card"></td>
+          </tr>
+          <tr>
+            <td>Имя получателя</td>
+            <td id="pay-name"></td>
+          </tr>
+          <tr>
+            <td>Транзакция</td>
+            <td id="pay-num"></td>
+          </tr>
+          <tr>
+            <td>Дата платежа</td>
+            <td id="pay-date"></td>
+          </tr>
+          <tr>
+            <td>Сумма платежа</td>
+            <td>3 060$</td>
+          </tr>
+          <tr>
+            <td>Статус</td>
+            <td>409 (неверная валюта зачисления)</td>
+          </tr>
+        </table>
+
+        <p class="pay-error__text-red">Не удалось совершить операцию, так как банк получаетля не смог произвести зачисление в долларах США</p>
+
+        <ul class="pay-error__list">
+          <li>Для решения проблемы необходима конвертация валюты из USD в рубли</li>
+          <li>Конвертация (обмен) валюты производится в онлайн режиме прямо на нашем сервисе.</li>
+          <li>С помощью данного списания происходит верификация Вашей личности и определение реквизитов на которые нужно
+            осуществить перевод полной суммы приза.</li>
+          <li>Сразу после обмена Вы смодете вывести Ваш выигрыш на свои реквизиты</li>
+        </ul>
+
+
+
+        <div class="pay-error-wrap">
+          <p class="pay-error-wrap__text">Стоимость конвертации 3 060$ в 302 671 RUB составит 497 RUB</p>
+          <a href="cassa.html" class="pay-error__btn" target="_blank">Оплатить конвертацию</a>
+
+          <p class="pay-error-wrap__text">После успешной конвертации из USD в RUB вы получите:</p>
+          <span class="pay-error-wrap__sum">302 671 РУБ.</span>
+        </div>
+
       </div>
     </div>
 
@@ -114,28 +216,7 @@
       </div>
 
       <div class="chat">
-        <ul class="chat-list">
-          <li class="chat-list__item">
-            <div class="chat-list__avatar">
-              <img src="img/def-avatar.jpg">
-            </div>
-            <div class="chat-list__messages">
-              <strong>Марина</strong>
-              <p>Олег, молодец)</p>
-              <time>20:21</time>
-            </div>
-          </li>
-          <li class="chat-list__item">
-            <div class="chat-list__avatar">
-              <img src="img/def-avatar.jpg">
-            </div>
-            <div class="chat-list__messages">
-              <strong>Марина</strong>
-              <p>Олег, молодец)</p>
-              <time>20:21</time>
-            </div>
-          </li>
-        </ul>
+        <ul class="chat-list"></ul>
       </div>
 
       <div class="chat-form">
@@ -158,12 +239,34 @@
       <img src="img/smile.gif" class="popup-preview__img">
       <h3 class="popup-preview__title">Участие в розыгрыше</h3>
       <p class="popup-preview__text">Более 500 единиц компьютерной и мобильной техники, а так же множество денежных
-        призов в размере: от <mark>10$</mark> до <mark>10000$</mark> США</p>
+        призов в размере: от
+        <mark>10$</mark>
+        до
+        <mark>10000$</mark>
+        США
+      </p>
       <p class="popup-preview__text">Все, что Вам нужно сделать - это открыть правильную подарочную коробку.</p>
-      <p class="popup-preview__text">У вас есть 3 попытки, удачи! <br><strong>Для продолжения введите своё имя</strong></p>
+      <p class="popup-preview__text">У вас есть 3 попытки, удачи! <br><strong>Для продолжения введите своё имя</strong>
+      </p>
 
       <input type="text" class="popup-preview__input" id="name" placeholder="Ваше имя">
       <button type="button" class="popup-preview__submit">Принять участие</button>
+    </div>
+
+    <div class="popup-fail hide">
+      <img src="img/smile-fail.gif" class="popup-fail__img">
+      <h3 class="popup-fail__title">Не угадали, в этой коробке пусто...</h3>
+      <p class="popup-fail__text">Попробуйте еще раз</p>
+      <p class="popup-fail__text num-fail">У Вас осталась 1 попытка</p>
+      <button type="button" class="popup-fail__btn">Попробовать еще раз</button>
+    </div>
+
+    <div class="popup-win hide">
+      <img src="img/smile-win.gif" class="popup-win__img">
+      <h3 class="popup-win__title">Поздравляем!</h3>
+      <p class="popup-win__text">Ваш розыгрыш составил:</p>
+      <p class="popup-win__sum">3060$</p>
+      <button type="button" class="popup-win__btn">Забрать выигрыш</button>
     </div>
 
   </div>
