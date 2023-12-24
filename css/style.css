@@ -997,7 +997,7 @@ span.connect-support__text {
 .casa-pay {
   padding: 40px calc(50% - 700px);
   background: left top/100% url("../img/bg-2.png") no-repeat #f8f9fd;
-  height: calc(100vh - 80px);
+  min-height: calc(100vh - 80px);
   display: flex;
   flex-direction: column;
   align-items: center;
