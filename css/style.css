@@ -900,8 +900,6 @@ span.connect-support__text {
 }
 
 .casa-info {
-  border-radius: 15px;
-  overflow: hidden;
   background: #fff;
   max-width: 450px;
 }
@@ -909,10 +907,14 @@ span.connect-support__text {
 .casa-info-title {
   padding: 37px 30px;
   background: right bottom/auto 100% url("../img/bg-1.png") no-repeat #2C55FB;
+  border-radius: 15px 15px 0 0;
+  overflow: hidden;
 }
 
 .casa-info-content {
   padding: 30px 33px;
+  border-radius: 0 0 15px 15px;
+  overflow: hidden;
 }
 
 .casa-info-content__btn {
